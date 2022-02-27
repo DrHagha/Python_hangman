@@ -8,17 +8,17 @@ if __name__ == "__main__":
     rank = Rank(ranking_path)
     
     user = User()
-    user.setName(input("input user name : "))
+    user.inputName()
     
     game = HangMan(user)
     game.execute()
     game.gameOver()
+    print()
     
     user.view()
-
-'''
+    print()
+    print()
+    print()
     rank.addUser(user)
-    rank.sort()
-    
     rank.view()
-'''
+    

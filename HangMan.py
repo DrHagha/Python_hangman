@@ -1,3 +1,4 @@
+import random
 from GameImpl import GameImpl
 from User import User
 
@@ -6,9 +7,18 @@ class HangMan(GameImpl):
     
     def __init__(self, user : User):
         self.user = user
-        self.word = "velog"
+        self.word = self.pickOneWord("Months.txt")
         self.monitor = [False for i in range (len(self.word))]
         self.count = 0
+        
+    def pickOneWord(self, file_name : str):
+        self.words = []
+        with open(file_name, 'r') as f:
+            lines = f.readlines()
+            for line in lines:
+                line = line.strip()
+                self.words.append(line)
+        return random.choice(self.words)
 
      
     def getUserName(self):
@@ -24,7 +34,7 @@ class HangMan(GameImpl):
     def gameOver(self):
         print("단어가 완성되었습니다.")
         print("---", self.word ,"---")
-        self.user
+        self.user.setScore(10000-self.count)
     
     
     def isEnd(self):
