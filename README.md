@@ -2,7 +2,10 @@
     <br/>
     <h1>[Python] Hangman</h1>
     <p>파이썬 기초문법 경험을 위한 Hangman Game</p><br/>
-
+    <p>Rank.txt에는 여태까지 플레이한 사람들의 이름과 점수, 플레이 날짜가 기록됩니다<p>
+    <p>Month.txt는 단어리스트입니다. 행맨 게임에 사용될 단어들이 본 파일에서 랜덤하게 선택됩니다</p>
+    <a href="https://velog.io/@coby/PythonHang-man-%EA%B2%8C%EC%9E%84%EB%A7%8C%EB%93%A4%EA%B8%B0-1">[velog link]</a>
+    <br/>
 </div>
 
 <div align="center">
